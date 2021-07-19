@@ -1,19 +1,62 @@
 package com.example.audioplayer
 
+import android.app.Activity
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.audioplayer.databinding.HomeActivityBinding
 
 class HomeActivity : AppCompatActivity() {
+
+    private val TAG = "HomeActivity"
+
+    val audioList: ArrayList<SongModel> = ArrayList()
+    private lateinit var mediaPlayerInstance: MediaPlayer
+
+    lateinit var binding: HomeActivityBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.home_activity)
-
+        binding = HomeActivityBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        initList()
         initMediaPlayer()
+        initClickListener()
 
     }
 
+    private fun initClickListener() {
+
+        binding.btnPlay.setOnClickListener {
+            if( !mediaPlayerInstance.isPlaying){
+                mediaPlayerInstance.start()
+            }
+        }
+
+        binding.btnPause.setOnClickListener {
+            if(mediaPlayerInstance.isPlaying){
+                mediaPlayerInstance.pause()
+            }
+        }
+
+        binding.btnStop.setOnClickListener {
+            if (mediaPlayerInstance.isPlaying){
+                mediaPlayerInstance.stop()
+            }
+        }
+    }
+
+    private fun initList() {
+        audioList.add(SongModel("Ring-1","Title-1","",R.raw.ring1))
+        audioList.add(SongModel("Ring-2","Title-2","",R.raw.ring2))
+        audioList.add(SongModel("Ring-3","Title-3","",R.raw.ring3))
+        audioList.add(SongModel("Ring-4","Title-4","",R.raw.ring4))
+        audioList.add(SongModel("Ring-5","Title-5","",R.raw.ring5))
+        audioList.add(SongModel("Ring-6","Title-6","",R.raw.ring6))
+        audioList.add(SongModel("Ring-7","Title-7","",R.raw.ring7))
+    }
+
     private fun initMediaPlayer() {
-//        val mediaPlayerInstance = MediaPlayer.create(this,)
+         mediaPlayerInstance = MediaPlayer.create(this, R.raw.ring1)
     }
 }
