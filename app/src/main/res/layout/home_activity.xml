@@ -25,27 +25,37 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-
         <Button
             android:id="@+id/btnPlay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="PLAY"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/btnPause"
+            app:layout_constraintEnd_toStartOf="@+id/btnNext"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="667dp" />
 
         <Button
-            android:id="@+id/btnPause"
+            android:id="@+id/btnNext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PAUSE"
+            android:text="NEXT"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnPrev"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnPlay"
+            tools:layout_editor_absoluteY="667dp" />
+
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prev"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btnStop"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnPlay"
+            app:layout_constraintStart_toEndOf="@+id/btnNext"
             tools:layout_editor_absoluteY="667dp" />
 
         <Button
@@ -56,7 +66,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnPause"
+            app:layout_constraintStart_toEndOf="@+id/btnPrev"
             tools:layout_editor_absoluteY="666dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,13 +14,15 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var mediaPlayerInstance: MediaPlayer
 
     lateinit var binding: HomeActivityBinding
+    
+    var currentIndex = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = HomeActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initList()
-        initMediaPlayer()
+        initMediaPlayer(currentIndex)
         initClickListener()
 
     }
@@ -29,14 +31,37 @@ class HomeActivity : AppCompatActivity() {
 
         binding.btnPlay.setOnClickListener {
             if( !mediaPlayerInstance.isPlaying){
+                binding.btnPlay.setText("Pause")
                 mediaPlayerInstance.start()
+            } else {
+                binding.btnPlay.setText("Play")
+                mediaPlayerInstance.pause()
             }
         }
 
-        binding.btnPause.setOnClickListener {
-            if(mediaPlayerInstance.isPlaying){
-                mediaPlayerInstance.pause()
+        binding.btnNext.setOnClickListener {
+            if (mediaPlayerInstance.isPlaying)
+                mediaPlayerInstance.stop()
+            if(currentIndex == audioList.size - 1){
+                currentIndex = 0
+            } else {
+                currentIndex ++
             }
+            initMediaPlayer(currentIndex)
+            mediaPlayerInstance.start()
+        }
+
+        binding.btnPrev.setOnClickListener {
+            if (mediaPlayerInstance.isPlaying)
+                mediaPlayerInstance.stop()
+            if(currentIndex == 0){
+                currentIndex = audioList.size - 1
+            } else {
+                currentIndex --
+            }
+            initMediaPlayer(currentIndex)
+            mediaPlayerInstance.start()
+
         }
 
         binding.btnStop.setOnClickListener {
@@ -56,7 +81,9 @@ class HomeActivity : AppCompatActivity() {
         audioList.add(SongModel("Ring-7","Title-7","",R.raw.ring7))
     }
 
-    private fun initMediaPlayer() {
-         mediaPlayerInstance = MediaPlayer.create(this, R.raw.ring1)
+    private fun initMediaPlayer(currentIndex: Int) {
+         mediaPlayerInstance = MediaPlayer.create(this, audioList[currentIndex].audio)
+//         binding.imageSong.setImageURI(audioList[currentIndex].image)
+
     }
 }
