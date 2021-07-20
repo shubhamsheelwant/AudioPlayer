@@ -1,9 +1,10 @@
-package com.example.audioplayer
+package com.example.audioplayer.View
 
-import android.app.Activity
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.audioplayer.Model.SongModel
+import com.example.audioplayer.R
 import com.example.audioplayer.databinding.HomeActivityBinding
 
 class HomeActivity : AppCompatActivity() {
@@ -72,18 +73,19 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun initList() {
-        audioList.add(SongModel("Ring-1","Title-1","",R.raw.ring1))
-        audioList.add(SongModel("Ring-2","Title-2","",R.raw.ring2))
-        audioList.add(SongModel("Ring-3","Title-3","",R.raw.ring3))
-        audioList.add(SongModel("Ring-4","Title-4","",R.raw.ring4))
-        audioList.add(SongModel("Ring-5","Title-5","",R.raw.ring5))
-        audioList.add(SongModel("Ring-6","Title-6","",R.raw.ring6))
-        audioList.add(SongModel("Ring-7","Title-7","",R.raw.ring7))
+        audioList.add(SongModel("Ring-1","Title-1","https://i.imgur.com/tGbaZCY.jpg", R.raw.ring1))
+        audioList.add(SongModel("Ring-2","Title-2","https://imgur.com/gallery/p73KwGG.jpg", R.raw.ring2))
+        audioList.add(SongModel("Ring-3","Title-3","https://i.imgur.com/tGbaZCY.jpg", R.raw.ring3))
+        audioList.add(SongModel("Ring-4","Title-4","https://imgur.com/gallery/p73KwGG.jpg", R.raw.ring4))
+        audioList.add(SongModel("Ring-5","Title-5","https://imgur.com/gallery/zCYjtW5.jpg", R.raw.ring5))
+        audioList.add(SongModel("Ring-6","Title-6","https://i.imgur.com/tGbaZCY.jpg", R.raw.ring6))
+        audioList.add(SongModel("Ring-7","Title-7","https://imgur.com/gallery/zCYjtW5.jpg", R.raw.ring7))
     }
 
     private fun initMediaPlayer(currentIndex: Int) {
          mediaPlayerInstance = MediaPlayer.create(this, audioList[currentIndex].audio)
 //         binding.imageSong.setImageURI(audioList[currentIndex].image)
-
+        binding.name.setText(audioList[currentIndex].name)
+        binding.title.setText(audioList[currentIndex].title)
     }
 }

@@ -5,6 +5,186 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="blueColor">#43337E</color>
+    <color name="app_red">#F44336</color>
+    <color name="dark_red">#E90000</color>
+    <color name="dark_grey">#202020</color>
+    <color name="green">#2BC48B</color>
+    <color name="dark_green">#46D15A</color>
+    <color name="drawer_icon_color">#000000</color>
+
+
+    <color name="colorPrimary">#FFBE00</color>
+    <color name="colorStatusBar">#FFBE00</color>
+    <color name="colorAccent">#43337E</color>
+    <color name="white">@android:color/white</color>
+    <color name="off_white">#F5F8FA</color>
+    <color name="grey">#CCCCCC</color>
+    <color name="red">#ff0000</color>
+    <color name="grey_light">#f0f0f0</color>
+    <color name="black">#000000</color>
+    <color name="shopby_grouptitle">#353535</color>
+    <color name="primary_dark">#2abb7c</color>
+    <color name="Blue">#0000FF</color>
+    <color name="transparent">#00000000</color>
+    <color name="light_blue">#017DE7</color>
+    <color name="app_gray">#B2B2B2</color>
+    <color name="app_logo_bg">#f5f8fa</color>
+    <color name="hint_text">#5F5F5F</color>
+    <color name="primary">#ff0000</color>
+    <color name="product_black">#1B1B1B</color>
+    <color name="divider">#455868</color>
+    <color name="cancel_button_grey">#A7A7A7</color>
+    <color name="view_all_offers">#D8D8D8</color>
+    <color name="cart_offer_background">#C6E5FF</color>
+    <color name="blue">#FFCB33</color>
+    <!--    Malar Color Start  -->
+
+
+    <!--    Malar Color End  -->
+
+
+    <!--    Shubham Color Start  -->
+
+    <color name="error_red">#FF4949</color>
+
+    <!--    Shubham Color End  -->
+
+
+    <!--    Shreya Color Start  -->
+    <color name="line_grey">#B1B1B1</color>
+    <color name="top_grey">#617688</color>
+    <color name="bottom_grey">#455868</color>
+    <color name="viewline_grey">#979797</color>
+    <color name="bottom_black">#0A161F</color>
+    <color name="seller_grey">#F2F2F2</color>
+    <color name="plp_header">#F2C94C</color>
+    <color name="address_blue">#FFCB33</color>
+    <color name="tag_yellow">#FFE500</color>
+    <color name="more_blue">#43337E</color>
+    <color name="child_shopby">#F8F7FA</color>
+    <color name="darker_black">#1C1C1C</color>
+    <color name="desc_grey">#333333</color>
+    <color name="review_grey">#1C1C28</color>
+    <color name="mrp_grey">#4F4F4F</color>
+    <color name="landed_green">#2D9D78</color>
+    <color name="grey_line">#E0E0E0</color>
+    <color name="out_of_stock">#E6322D</color>
+    <color name="quantity_grey">#666666</color>
+    <color name="addToCartYellow">#FFC700</color>
+    <color name="order_black">#555770</color>
+    <color name="view_back">#E6E6E6</color>
+    <color name="radio_grey">#999999</color>
+    <color name="sub_filter_count">#797B7C</color>
+    <color name="dark_yellow">#EF9A3A</color>
+    <color name="shimmer_yellow">#80FFC700</color>
+    <color name="shimmer_purple">#1A6755A9</color>
+    <color name="disable_grey">#6C757D</color>
+    <color name="remember_me">#000000</color>
+    <color name="cart_offer">#C6E5FF</color>
+    <color name="white_purple">#43337E</color>
+
+
+    <!--    Shreya Color End  -->
+
+    <!-- Mahesh Color start -->
+    <color name="blue_dark">#2B1F93</color>
+    <color name="light_gray">#313131</color>
+    <color name="light_background_gray">#D8D8D8</color>
+    <color name="light_white">#F9F7F9</color>
+    <color name="dodger_blue">#43337E</color>
+
+
+    <color name="persian_blue">#1F36C7</color>
+    <color name="homescreenbackground">#F5F8FA</color>
+    <color name="demo_dark_transparent">#24000000</color>
+    <!-- Mahesh Color End -->
+
+
+    <!-- Fatma color start -->
+    <color name="nero_black">#1B1B1B</color>
+    <color name="light_grey_product">#33455868</color>
+    <color name="light_blue_product">#92c9ff</color>
+    <color name="white_background">#C2CED9</color>
+    <color name="grey_background">#D9DDE0</color>
+    <color name="grey_dark">#494949</color>
+    <color name="grey_light_2">#EFEFEF</color>
+
+    <!-- Fatma Color End -->
+
+    <!--Shruti Color Start -->
+    <color name="light_grey">#707070</color>
+    <color name="separator_grey">#E7E7E7</color>
+    <color name="password_toggle_grey">#C5C5C5</color>
+    <color name="days_grey">#B5B5B5</color>
+    <color name="tag_blue">#D6EAFB</color>
+    <color name="viewline_grey_40_opacity">#66979797</color>
+    <color name="delete_grey">#464646</color>
+    <color name="rejected_red">#B30F1D</color>
+    <color name="under_validation_yellow">#FDF0D3</color>
+    <color name="grey_medium">#5f5f5f</color>
+    <color name="navy_blue">#142CA5</color>
+    <color name="grey_3">#828282</color>
+    <color name="forest_green">#198045</color>
+    <color name="forest_blue">#668cff</color>
+    <color name="delivery_error_red">#E63228</color>
+    <color name="grey_1">#333333</color>
+    <color name="grey_4">#888888</color>
+    <color name="true_black">#505050</color>
+    <!--Shruti Color End -->
+
+
+    <!--
+        Divya Color Starts
+    -->
+
+
+    <!--    Tanuja Color Starts-->
+    <color name="frag_cartScreen_background">#F5F8FA</color>
+    <color name="offers_text_color">#017DE7</color>
+    <color name="amount_text">#313131</color>
+    <color name="product_name">#1B1B1B</color>
+    <color name="dark_blue">#017DE7</color>
+    <color name="royal_blue">#FFCB33</color>
+    <color name="remove_btn">#EB5757</color>
+    <color name="checkout_btn_color">#43337E</color>
+    <color name="view_grey">#F2F2F2</color>
+    <!--    Tanuja Color Ends-->
+
+
+    <color name="blue_theme">#43337E</color>
+
+    <!-- order_placed_screen -->
+    <color name="order_placed_screen_bg_color">#F2F2F2</color>
+    <color name="order_placed_thank_you_label_color">#2D9D78</color>
+    <color name="order_placed_order_number_label_color">#333333</color>
+    <color name="order_placed_order_number_color">#1B1B1B</color>
+
+    <color name="grey_divider">#C2CED9</color>
+    <color name="productlight_grey">#73706E</color>
+
+    <!-- Set Email Screen -->
+    <color name="password_error_text_color">#FF4949</color>
+    <color name="instruction_text_color">#D9000000</color>
+    <color name="pdppurple">#A880FA</color>
+    <color name="pdpgreen">#27AE60</color>
+    <color name="pdporange">#F2994A</color>
+    <color name="pdpred">#EB5757</color>
+
+    <color name="background_grey">#D1D1D1</color>
+    <color name="black_solid">#1C1C28</color>
+    <color name="grey_icon">#555770</color>
+
+    <color name="blue_balance">#2292FF</color>
+
+    <color name="document_grey">#6D6D6D</color>
+
+    <color name="grey_text">#6C6C6C</color>
+
+    <color name="error_msg_red">#ED1111</color>
+    <color name="category_screen_bg">#f0f3f5</color>
+
+    <!-- Reorder screen -->
+    <color name="pk_purple">#6755A9</color>
+
 </resources>
